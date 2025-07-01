@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium PG Accommodation | Modern Living Spaces</title>
+    <meta name="description" content="Experience luxury living at Premium PG Accommodation. Modern rooms, world-class amenities, and exceptional service in the heart of the city.">
+    <meta name="keywords" content="PG accommodation, luxury hostel, premium rooms, student housing, professional accommodation">
+    <meta name="author" content="Premium PG Accommodation">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Premium PG Accommodation | Modern Living Spaces">
+    <meta property="og:description" content="Experience luxury living with modern amenities and exceptional service">
+    <meta property="og:image" content="https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630&fit=crop">
+    <meta property="og:url" content="https://premiumpg.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Premium PG Accommodation">
+    <meta name="twitter:description" content="Experience luxury living with modern amenities">
+    <meta name="twitter:image" content="https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630&fit=crop">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏨</text></svg>">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="src/style.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LodgingBusiness",
+      "name": "Premium PG Accommodation",
+      "description": "Luxury paying guest accommodation with modern amenities and exceptional service",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Premium Street, Business District",
+        "addressLocality": "Metropolitan City",
+        "addressRegion": "State",
+        "postalCode": "123456",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "28.6139",
+        "longitude": "77.2090"
+      },
+      "telephone": "+91-98765-43210",
+      "email": "info@premiumpg.com",
+      "url": "https://premiumpg.com",
+      "priceRange": "₹7500-₹15000",
+      "amenityFeature": ["WiFi", "Parking", "Laundry", "Security", "Meals", "Fitness Center"],
+      "starRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      }
+    }
+    </script>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 backdrop-blur-md">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 bg-gradient-to-r from-amber-500 to-orange-500 rounded-2xl flex items-center justify-center text-white text-xl font-bold shadow-lg">
+                        🏨
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-serif font-bold text-gray-900 dark:text-white">Premium PG</h1>
+                        <p class="text-xs text-gray-600 dark:text-gray-400 font-medium">Luxury Living</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#rooms" class="nav-link">Rooms</a>
+                    <a href="#amenities" class="nav-link">Amenities</a>
+                    <a href="#gallery" class="nav-link">Gallery</a>
+                    <a href="#testimonials" class="nav-link">Reviews</a>
+                    <a href="#location" class="nav-link">Location</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+
+                <!-- Theme Toggle & Mobile Menu -->
+                <div class="flex items-center space-x-4">
+                    <button id="theme-toggle" class="w-10 h-10 rounded-xl bg-gray-200 dark:bg-gray-700 flex items-center justify-center hover:scale-110 transition-all duration-200">
+                        <span class="theme-icon text-lg">🌙</span>
+                    </button>
+                    
+                    <!-- Mobile Menu Toggle -->
+                    <button id="mobile-menu-toggle" class="lg:hidden w-10 h-10 rounded-xl bg-gray-200 dark:bg-gray-700 flex flex-col items-center justify-center space-y-1 hover:scale-110 transition-all duration-200">
+                        <span class="w-5 h-0.5 bg-gray-600 dark:bg-gray-300 transition-all duration-200"></span>
+                        <span class="w-5 h-0.5 bg-gray-600 dark:bg-gray-300 transition-all duration-200"></span>
+                        <span class="w-5 h-0.5 bg-gray-600 dark:bg-gray-300 transition-all duration-200"></span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="lg:hidden hidden mt-6 pb-6 border-t border-gray-200 dark:border-gray-700">
+                <div class="flex flex-col space-y-4 pt-6">
+                    <a href="#home" class="nav-link text-center">Home</a>
+                    <a href="#about" class="nav-link text-center">About</a>
+                    <a href="#rooms" class="nav-link text-center">Rooms</a>
+                    <a href="#amenities" class="nav-link text-center">Amenities</a>
+                    <a href="#gallery" class="nav-link text-center">Gallery</a>
+                    <a href="#testimonials" class="nav-link text-center">Reviews</a>
+                    <a href="#location" class="nav-link text-center">Location</a>
+                    <a href="#contact" class="nav-link text-center">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen overflow-hidden">
+        <!-- Hero Slider -->
+        <div class="hero-slider absolute inset-0">
+            <!-- Slide 1 -->
+            <div class="slide active absolute inset-0 opacity-100 transition-opacity duration-1000">
+                <img src="https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop" 
+                     alt="Luxury PG Accommodation" 
+                     class="w-full h-full object-cover"
+                     loading="eager">
+                <div class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent"></div>
+                <div class="absolute inset-0 flex items-center justify-center text-center text-white px-6">
+                    <div class="max-w-4xl animate-on-scroll">
+                        <h1 class="text-5xl md:text-7xl font-serif font-bold mb-6 text-shadow">
+                            Premium Living
+                            <span class="block text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-500">
+                                Redefined
+                            </span>
+                        </h1>
+                        <p class="text-xl md:text-2xl mb-8 text-gray-200 max-w-2xl mx-auto leading-relaxed">
+                            Experience luxury accommodation with world-class amenities and exceptional service in the heart of the city
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                            <a href="#rooms" class="btn bg-gradient-to-r from-amber-500 to-orange-500 text-white px-8 py-4 rounded-2xl font-semibold hover:shadow-2xl hover:scale-105 transition-all duration-300">
+                                Explore Rooms
+                            </a>
+                            <a href="#contact" class="btn bg-white/20 backdrop-blur-md text-white border-2 border-white/30 px-8 py-4 rounded-2xl font-semibold hover:bg-white/30 transition-all duration-300">
+                                Book Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slide absolute inset-0 opacity-0 transition-opacity duration-1000">
+                <img src="https://images.pexels.com/photos/1743229/pexels-photo-1743229.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop" 
+                     alt="Modern Room Interior" 
+                     class="w-full h-full object-cover"
+                     loading="lazy">
+                <div class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent"></div>
+                <div class="absolute inset-0 flex items-center justify-center text-center text-white px-6">
+                    <div class="max-w-4xl">
+                        <h1 class="text-5xl md:text-7xl font-serif font-bold mb-6 text-shadow">
+                            Modern Comfort
+                            <span class="block text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-500">
+                                & Style
+                            </span>
+                        </h1>
+                        <p class="text-xl md:text-2xl mb-8 text-gray-200 max-w-2xl mx-auto leading-relaxed">
+                            Thoughtfully designed spaces that blend contemporary aesthetics with ultimate comfort for the modern lifestyle
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                            <a href="#amenities" class="btn bg-gradient-to-r from-amber-500 to-orange-500 text-white px-8 py-4 rounded-2xl font-semibold hover:shadow-2xl hover:scale-105 transition-all duration-300">
+                                View Amenities
+                            </a>
+                            <a href="#gallery" class="btn bg-white/20 backdrop-blur-md text-white border-2 border-white/30 px-8 py-4 rounded-2xl font-semibold hover:bg-white/30 transition-all duration-300">
+                                Photo Gallery
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="slide absolute inset-0 opacity-0 transition-opacity duration-1000">
+                <img src="https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop" 
+                     alt="Luxury Amenities" 
+                     class="w-full h-full object-cover"
+                     loading="lazy">
+                <div class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent"></div>
+                <div class="absolute inset-0 flex items-center justify-center text-center text-white px-6">
+                    <div class="max-w-4xl">
+                        <h1 class="text-5xl md:text-7xl font-serif font-bold mb-6 text-shadow">
+                            Exceptional
+                            <span class="block text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-500">
+                                Service
+                            </span>
+                        </h1>
+                        <p class="text-xl md:text-2xl mb-8 text-gray-200 max-w-2xl mx-auto leading-relaxed">
+                            24/7 concierge service, housekeeping, and personalized attention to make your stay truly memorable
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                            <a href="#about" class="btn bg-gradient-to-r from-amber-500 to-orange-500 text-white px-8 py-4 rounded-2xl font-semibold hover:shadow-2xl hover:scale-105 transition-all duration-300">
+                                Learn More
+                            </a>
+                            <a href="#testimonials" class="btn bg-white/20 backdrop-blur-md text-white border-2 border-white/30 px-8 py-4 rounded-2xl font-semibold hover:bg-white/30 transition-all duration-300">
+                                Read Reviews
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slider Controls -->
+        <div class="absolute top-1/2 left-6 transform -translate-y-1/2 z-10">
+            <button id="prev-slide" class="w-12 h-12 rounded-full bg-white/20 backdrop-blur-md text-white hover:bg-white/30 transition-all duration-200 flex items-center justify-center">
+                ←
+            </button>
+        </div>
+        <div class="absolute top-1/2 right-6 transform -translate-y-1/2 z-10">
+            <button id="next-slide" class="w-12 h-12 rounded-full bg-white/20 backdrop-blur-md text-white hover:bg-white/30 transition-all duration-200 flex items-center justify-center">
+                →
+            </button>
+        </div>
+
+        <!-- Slider Dots -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-3 z-10">
+            <button class="slider-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-all duration-200 active"></button>
+            <button class="slider-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-all duration-200"></button>
+            <button class="slider-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-all duration-200"></button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white dark:bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 animate-on-scroll">
+                <h2 class="text-4xl md:text-5xl font-serif font-bold text-gray-900 dark:text-white mb-6">
+                    About <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-orange-500">Premium PG</span>
+                </h2>
+                <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                    Redefining accommodation standards with luxury, comfort, and exceptional service for the modern lifestyle
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="animate-on-scroll">
+                    <h3 class="text-3xl font-serif font-semibold text-gray-900 dark:text-white mb-6">
+                        Where Luxury Meets Comfort
+                    </h3>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+                        At Premium PG, we believe that your accommodation should be more than just a place to stay. It should be a sanctuary where you can relax, recharge, and thrive. Our meticulously designed spaces combine contemporary aesthetics with thoughtful amenities to create an unparalleled living experience.
+                    </p>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
+                        From our elegantly furnished rooms to our world-class facilities, every detail has been carefully curated to exceed your expectations and provide the comfort you deserve.
+                    </p>
+                    
+                    <!-- Feature Highlights -->
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="text-center p-6 bg-gradient-to-br from-amber-50 to-orange-50 dark:from-amber-900/20 dark:to-orange-900/20 rounded-2xl">
+                            <div class="w-12 h-12 bg-gradient-to-r from-amber-500 to-orange-500 rounded-xl flex items-center justify-center text-white text-xl mx-auto mb-3">
+                                🏆
+                            </div>
+                            <h4 class="font-semibold text-gray-900 dark:text-white mb-2">Premium Quality</h4>
+                            <p class="text-sm text-gray-600 dark:text-gray-300">5-star rated accommodation</p>
+                        </div>
+                        <div class="text-center p-6 bg-gradient-to-br from-amber-50 to-orange-50 dark:from-amber-900/20 dark:to-orange-900/20 rounded-2xl">
+                            <div class="w-12 h-12 bg-gradient-to-r from-amber-500 to-orange-500 rounded-xl flex items-center justify-center text-white text-xl mx-auto mb-3">
+                                🛡️
+                            </div>
+                            <h4 class="font-semibold text-gray-900 dark:text-white mb-2">24/7 Security</h4>
+                            <p class="text-sm text-gray-600 dark:text-gray-300">Complete safety assurance</p>
+                        </div>
+                        <div class="text-center p-6 bg-gradient-to-br from-amber-50 to-orange-50 dark:from-amber-900/20 dark:to-orange-900/20 rounded-2xl">
+                            <div class="w-12 h-12 bg-gradient-to-r from-amber-500 to-orange-500 rounded-xl flex items-center justify-center text-white text-xl mx-auto mb-3">
+                                🌟
+                            </div>
+                            <h4 class="font-semibold text-gray-900 dark:text-white mb-2">Exceptional Service</h4>
+                            <p class="text-sm text-gray-600 dark:text-gray-300">Personalized attention</p>
+                        </div>
+                        <div class="text-center p-6 bg-gradient-to-br from-amber-50 to-orange-50 dark:from-amber-900/20 dark:to-orange-900/20 rounded-2xl">
+                            <div class="w-12 h-12 bg-gradient-to-r from-amber-500 to-orange-500 rounded-xl flex items-center justify-center text-white text-xl mx-auto mb-3">
+                                📍
+                            </div>
+                            <h4 class="font-semibold text-gray-900 dark:text-white mb-2">Prime Location</h4>
+                            <p class="text-sm text-gray-600 dark:text-gray-300">Heart of the city</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="animate-on-scroll">
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" 
+                             alt="Premium PG Interior" 
+                             class="w-full h-96 object-cover rounded-3xl shadow-2xl"
+                             loading="lazy">
+                        <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-gradient-to-r from-amber-500 to-orange-500 rounded-3xl flex items-center justify-center text-white">
+                            <div class="text-center">
+                                <div class="text-2xl font-bold">5+</div>
+                                <div class="text-xs">Years Experience</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="rooms" class="py-20 bg-gray-50 dark:bg-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 animate-on-scroll">
+                <h2 class="text-4xl md:text-5xl font-serif font-bold text-gray-900 dark:text-white mb-6">
+                    Luxury <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-orange-500">Room Types</span>
+                </h2>
+                <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                    Choose from our carefully designed accommodations, each offering unique features and premium amenities
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Standard Room -->
+                <div class="bg-white dark:bg-gray-900 rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 animate-on-scroll">
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" 
+                             alt="Standard Room" 
+                             class="w-full h-64 object-cover"
+                             loading="lazy">
+                        <div class="absolute top-4 right-4 bg-gradient-to-r from-blue-500 to-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            Popular
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-serif font-semibold text-gray-900 dark:text-white mb-4">Standard Room</h3>
+                        <div class="text-3xl font-bold text-gray-900 dark:text-white mb-6">
+                            ₹7,500<span class="text-lg font-normal text-gray-600 dark:text-gray-400">/month</span>
+                        </div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center text-gray-600 dark:text-gray-300">
+                                <span class="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center text-white text-xs mr-3">✓</span>
+                                Single occupancy
+                            </li>
+                            <li class="flex items-center text-gray-600 dark:text-gray-300">
+                                <span class="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center text-white text-xs mr-3">✓</span>
+                                Attached bathroom
+                            </li>
+                            <li class="flex items-center text-gray-600 dark:text-gray-300">
+                                <span class="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center text-white text-xs mr-3">✓</span>
+                                High-speed WiFi
+                            </li>
+                            <li class="flex items-center text-gray-600 dark:text-gray-300">
+                                <span class="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center text-white text-xs mr-3">✓</span>
+                                Daily housekeeping
+                            </li>
+                            <li class="flex items-center text-gray-600 dark:text-gray-300">
+                                <span class="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center text-white text-xs mr-3">✓</span>
+                                Meals included
+                            </li>
+                        </ul>
+                        <button class="w-full bg-gradient-to-r from-amber-500 to-orange-500 text-white py-3 rounded-2xl font-semibold hover:shadow-lg transition-all duration-200">
+                            Book Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Deluxe Room -->
+                <div class="bg-white dark:bg-gray-900 rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 animate-on-scroll">
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/1743229/pexels-photo-1743229.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" 
+                             alt="Deluxe Room" 
+                             class="w-full h-64 object-cover"
+                             loading="lazy">
+                        <div class="absolute top-4 right-4 bg-gradient-to-r from-purple-500 to-purple-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            Recommended
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-serif font-semibold text-gray-900 dark:text-white mb-4">Deluxe Room</h3>
+                        <div class="text-3xl font-bold text-gray-900 dark:text-white mb-6">
+                            ₹10,500<span class="text-lg font-normal text-gray-600 dark:text-gray-400">/month</span>
+                        </div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center text-gray-600 dark:text-gray-300">
+                                <span class="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center text-white text-xs mr-3">✓</span>
+                                Single occupancy
+                            </li>
+                            <li class="flex items-center text-gray-600 dark:text-gray-300">
+                                <span class="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center text-white text-xs mr-3">✓</span>
+                                Premium bathroom
+                            </li>
+                            <li class="flex items-center text-gray-600 dark:text-gray-300">
+                                <span class="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center text-white text-xs mr-3">✓</span>
+                                Balcony access
+                            </li>
+                            <li class="flex items-center text-gray-600 dark:text-gray-300">
+                                <span class="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center text-white text-xs mr-3">✓</span>
+                                Mini refrigerator
+                            </li>
+                            <li class="flex items-center text-gray-600 dark:text-gray-300">
+                                <span class="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center text-white text-xs mr-3">✓</span>
+                                Premium meals
+                            </li>
+                        </ul>
+                        <button class="w-full bg-gradient-to-r from-amber-500 to-orange-500 text-white py-3 rounded-2xl font-semibold hover:shadow-lg transition-all duration-200">
+                            Book Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Executive Suite -->
+                <div class="bg-white dark:bg-gray-900 rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 animate-on-scroll relative">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-amber-500 to-orange-500 text-white px-6 py-2 rounded-full text-sm font-bold z-10">
+                        Most Popular
+                    </div>
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" 
+                             alt="Executive Suite" 
+                             class="w-full h-64 object-cover"
+                             loading="lazy">
+                        <div class="absolute top-4 right-4 bg-gradient-to-r from-amber-500 to-orange-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            Luxury
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-serif font-semibold text-gray-900 dark:text-white mb-4">Executive Suite</h3>
+                        <div class="text-3xl font-bold text-gray-900 dark:text-white mb-6">
+                            ₹15,000<span class="text-lg font-normal text-gray-600 dark:text-gray-400">/month</span>
+                        </div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center text-gray-600 dark:text-gray-300">
+                                <span class="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center text-white text-xs mr-3">✓</span>
+                                Spacious suite
+                            </li>
+                            <li class="flex items-center text-gray-600 dark:text-gray-300">
+                                <span class="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center text-white text-xs mr-3">✓</span>
+                                Luxury bathroom
+                            </li>
+                            <li class="flex items-center text-gray-600 dark:text-gray-300">
+                                <span class="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center text-white text-xs mr-3">✓</span>
+                                Private balcony
+                            </li>
+                            <li class="flex items-center text-gray-600 dark:text-gray-300">
+                                <span class="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center text-white text-xs mr-3">✓</span>
+                                Kitchenette
+                            </li>
+                            <li class="flex items-center text-gray-600 dark:text-gray-300">
+                                <span class="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center text-white text-xs mr-3">✓</span>
+                                Concierge service
+                            </li>
+                        </ul>
+                        <button class="w-full bg-gradient-to-r from-amber-500 to-orange-500 text-white py-3 rounded-2xl font-semibold hover:shadow-lg transition-all duration-200">
+                            Book Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section id="amenities" class="py-20 bg-white dark:bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 animate-on-scroll">
+                <h2 class="text-4xl md:text-5xl font-serif font-bold text-gray-900 dark:text-white mb-6">
+                    World-Class <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-orange-500">Amenities</span>
+                </h2>
+                <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                    Experience premium facilities designed to enhance your lifestyle and provide ultimate comfort
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="text-center p-8 bg-gray-50 dark:bg-gray-800 rounded-3xl hover:shadow-xl transition-all duration-300 hover:scale-105 animate-on-scroll">
+                    <div class="w-16 h-16 bg-gradient-to-r from-amber-500 to-orange-500 rounded-2xl flex items-center justify-center text-white text-2xl mx-auto mb-6">
+                        🏋️‍♂️
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Fitness Center</h3>
+                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                        State-of-the-art gym equipment with personal training sessions available
+                    </p>
+                </div>
+
+                <div class="text-center p-8 bg-gray-50 dark:bg-gray-800 rounded-3xl hover:shadow-xl transition-all duration-300 hover:scale-105 animate-on-scroll">
+                    <div class="w-16 h-16 bg-gradient-to-r from-amber-500 to-orange-500 rounded-2xl flex items-center justify-center text-white text-2xl mx-auto mb-6">
+                        🍽️
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Gourmet Dining</h3>
+                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                        Multi-cuisine restaurant with healthy and delicious meal options
+                    </p>
+                </div>
+
+                <div class="text-center p-8 bg-gray-50 dark:bg-gray-800 rounded-3xl hover:shadow-xl transition-all duration-300 hover:scale-105 animate-on-scroll">
+                    <div class="w-16 h-16 bg-gradient-to-r from-amber-500 to-orange-500 rounded-2xl flex items-center justify-center text-white text-2xl mx-auto mb-6">
+                        📶
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">High-Speed WiFi</h3>
+                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                        Ultra-fast internet connectivity throughout the premises
+                    </p>
+                </div>
+
+                <div class="text-center p-8 bg-gray-50 dark:bg-gray-800 rounded-3xl hover:shadow-xl transition-all duration-300 hover:scale-105 animate-on-scroll">
+                    <div class="w-16 h-16 bg-gradient-to-r from-amber-500 to-orange-500 rounded-2xl flex items-center justify-center text-white text-2xl mx-auto mb-6">
+                        🚗
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Secure Parking</h3>
+                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                        24/7 monitored parking facility for cars and two-wheelers
+                    </p>
+                </div>
+
+                <div class="text-center p-8 bg-gray-50 dark:bg-gray-800 rounded-3xl hover:shadow-xl transition-all duration-300 hover:scale-105 animate-on-scroll">
+                    <div class="w-16 h-16 bg-gradient-to-r from-amber-500 to-orange-500 rounded-2xl flex items-center justify-center text-white text-2xl mx-auto mb-6">
+                        🧺
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Laundry Service</h3>
+                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                        Professional laundry and dry cleaning services available
+                    </p>
+                </div>
+
+                <div class="text-center p-8 bg-gray-50 dark:bg-gray-800 rounded-3xl hover:shadow-xl transition-all duration-300 hover:scale-105 animate-on-scroll">
+                    <div class="w-16 h-16 bg-gradient-to-r from-amber-500 to-orange-500 rounded-2xl flex items-center justify-center text-white text-2xl mx-auto mb-6">
+                        🎮
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Recreation Lounge</h3>
+                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                        Gaming zone, library, and entertainment area for relaxation
+                    </p>
+                </div>
+
+                <div class="text-center p-8 bg-gray-50 dark:bg-gray-800 rounded-3xl hover:shadow-xl transition-all duration-300 hover:scale-105 animate-on-scroll">
+                    <div class="w-16 h-16 bg-gradient-to-r from-amber-500 to-orange-500 rounded-2xl flex items-center justify-center text-white text-2xl mx-auto mb-6">
+                        💼
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Business Center</h3>
+                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                        Fully equipped workspace with printing and meeting facilities
+                    </p>
+                </div>
+
+                <div class="text-center p-8 bg-gray-50 dark:bg-gray-800 rounded-3xl hover:shadow-xl transition-all duration-300 hover:scale-105 animate-on-scroll">
+                    <div class="w-16 h-16 bg-gradient-to-r from-amber-500 to-orange-500 rounded-2xl flex items-center justify-center text-white text-2xl mx-auto mb-6">
+                        🛡️
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">24/7 Security</h3>
+                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                        Round-the-clock security with CCTV monitoring and access control
+                    </p>
+                </div>
+
+                <div class="text-center p-8 bg-gray-50 dark:bg-gray-800 rounded-3xl hover:shadow-xl transition-all duration-300 hover:scale-105 animate-on-scroll">
+                    <div class="w-16 h-16 bg-gradient-to-r from-amber-500 to-orange-500 rounded-2xl flex items-center justify-center text-white text-2xl mx-auto mb-6">
+                        🧹
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Housekeeping</h3>
+                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                        Daily room cleaning and maintenance services for your comfort
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-gray-50 dark:bg-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 animate-on-scroll">
+                <h2 class="text-4xl md:text-5xl font-serif font-bold text-gray-900 dark:text-white mb-6">
+                    Photo <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-orange-500">Gallery</span>
+                </h2>
+                <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                    Take a virtual tour of our premium facilities and beautifully designed spaces
+                </p>
+            </div>
+
+            <!-- Gallery Tabs -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button class="gallery-tab-btn active px-6 py-3 rounded-2xl font-semibold transition-all duration-200" data-tab="rooms">
+                    Rooms
+                </button>
+                <button class="gallery-tab-btn px-6 py-3 rounded-2xl font-semibold transition-all duration-200" data-tab="amenities">
+                    Amenities
+                </button>
+                <button class="gallery-tab-btn px-6 py-3 rounded-2xl font-semibold transition-all duration-200" data-tab="common-areas">
+                    Common Areas
+                </button>
+                <button class="gallery-tab-btn px-6 py-3 rounded-2xl font-semibold transition-all duration-200" data-tab="exterior">
+                    Exterior
+                </button>
+            </div>
+
+            <!-- Gallery Content -->
+            <div class="gallery-tab-content active" id="rooms-gallery">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                        <img src="https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" 
+                             alt="Standard Room" 
+                             class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+                             loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <h4 class="font-semibold">Standard Room</h4>
+                                <p class="text-sm">Comfortable and modern</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                        <img src="https://images.pexels.com/photos/1743229/pexels-photo-1743229.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" 
+                             alt="Deluxe Room" 
+                             class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+                             loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <h4 class="font-semibold">Deluxe Room</h4>
+                                <p class="text-sm">Spacious with balcony</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                        <img src="https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" 
+                             alt="Executive Suite" 
+                             class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+                             loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <h4 class="font-semibold">Executive Suite</h4>
+                                <p class="text-sm">Luxury accommodation</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                        <img src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" 
+                             alt="Room Interior" 
+                             class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+                             loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <h4 class="font-semibold">Room Interior</h4>
+                                <p class="text-sm">Modern furnishing</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                        <img src="https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" 
+                             alt="Bathroom" 
+                             class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+                             loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <h4 class="font-semibold">Premium Bathroom</h4>
+                                <p class="text-sm">Luxury amenities</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                        <img src="https://images.pexels.com/photos/1648776/pexels-photo-1648776.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" 
+                             alt="Study Area" 
+                             class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+                             loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <h4 class="font-semibold">Study Area</h4>
+                                <p class="text-sm">Quiet workspace</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-tab-content hidden" id="amenities-gallery">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                        <img src="https://images.pexels.com/photos/1552252/pexels-photo-1552252.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" 
+                             alt="Fitness Center" 
+                             class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+                             loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <h4 class="font-semibold">Fitness Center</h4>
+                                <p class="text-sm">Modern equipment</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                        <img src="https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" 
+                             alt="Dining Area" 
+                             class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+                             loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <h4 class="font-semibold">Dining Area</h4>
+                                <p class="text-sm">Gourmet cuisine</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                        <img src="https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" 
+                             alt="Business Center" 
+                             class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+                             loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <h4 class="font-semibold">Business Center</h4>
+                                <p class="text-sm">Professional workspace</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-tab-content hidden" id="common-areas-gallery">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                        <img src="https://images.pexels.com/photos/1571463/pexels-photo-1571463.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" 
+                             alt="Lobby" 
+                             class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+                             loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <h4 class="font-semibold">Reception Lobby</h4>
+                                <p class="text-sm">Elegant entrance</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                        <img src="https://images.pexels.com/photos/1571468/pexels-photo-1571468.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" 
+                             alt="Recreation Lounge" 
+                             class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+                             loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <h4 class="font-semibold">Recreation Lounge</h4>
+                                <p class="text-sm">Relaxation space</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                        <img src="https://images.pexels.com/photos/1571467/pexels-photo-1571467.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" 
+                             alt="Common Kitchen" 
+                             class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+                             loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <h4 class="font-semibold">Common Kitchen</h4>
+                                <p class="text-sm">Shared cooking space</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-tab-content hidden" id="exterior-gallery">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                        <img src="https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" 
+                             alt="Building Exterior" 
+                             class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+                             loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <h4 class="font-semibold">Building Exterior</h4>
+                                <p class="text-sm">Modern architecture</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                        <img src="https://images.pexels.com/photos/1571452/pexels-photo-1571452.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" 
+                             alt="Garden Area" 
+                             class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+                             loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <h4 class="font-semibold">Garden Area</h4>
+                                <p class="text-sm">Green spaces</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                        <img src="https://images.pexels.com/photos/1571451/pexels-photo-1571451.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" 
+                             alt="Parking Area" 
+                             class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+                             loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <h4 class="font-semibold">Parking Area</h4>
+                                <p class="text-sm">Secure parking</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-white dark:bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 animate-on-scroll">
+                <h2 class="text-4xl md:text-5xl font-serif font-bold text-gray-900 dark:text-white mb-6">
+                    What Our <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-orange-500">Residents Say</span>
+                </h2>
+                <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                    Hear from our satisfied residents about their exceptional living experience at Premium PG
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 animate-on-scroll">
+                    <div class="flex items-center mb-6">
+                        <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" 
+                             alt="Priya Sharma" 
+                             class="w-16 h-16 rounded-full object-cover mr-4"
+                             loading="lazy">
+                        <div>
+                            <h4 class="font-semibold text-gray-900 dark:text-white">Priya Sharma</h4>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm">Software Engineer</p>
+                            <div class="flex text-amber-500 text-sm mt-1">
+                                ⭐⭐⭐⭐⭐
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed italic">
+                        "Living at Premium PG has been an amazing experience. The facilities are top-notch, and the staff is incredibly helpful. The location is perfect for my daily commute, and I love the community atmosphere here."
+                    </p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 animate-on-scroll">
+                    <div class="flex items-center mb-6">
+                        <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" 
+                             alt="Rahul Verma" 
+                             class="w-16 h-16 rounded-full object-cover mr-4"
+                             loading="lazy">
+                        <div>
+                            <h4 class="font-semibold text-gray-900 dark:text-white">Rahul Verma</h4>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm">MBA Student</p>
+                            <div class="flex text-amber-500 text-sm mt-1">
+                                ⭐⭐⭐⭐⭐
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed italic">
+                        "The Executive Suite is absolutely fantastic! The space is well-designed, and having a kitchenette makes life so much easier. The fitness center and study areas are excellent for maintaining a balanced lifestyle."
+                    </p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 animate-on-scroll">
+                    <div class="flex items-center mb-6">
+                        <img src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" 
+                             alt="Anita Patel" 
+                             class="w-16 h-16 rounded-full object-cover mr-4"
+                             loading="lazy">
+                        <div>
+                            <h4 class="font-semibold text-gray-900 dark:text-white">Anita Patel</h4>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm">Marketing Professional</p>
+                            <div class="flex text-amber-500 text-sm mt-1">
+                                ⭐⭐⭐⭐⭐
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed italic">
+                        "I've been staying here for over a year now, and it feels like home. The security is excellent, the food is delicious, and the housekeeping service is impeccable. Highly recommend to working professionals!"
+                    </p>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 animate-on-scroll">
+                    <div class="flex items-center mb-6">
+                        <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" 
+                             alt="Vikram Singh" 
+                             class="w-16 h-16 rounded-full object-cover mr-4"
+                             loading="lazy">
+                        <div>
+                            <h4 class="font-semibold text-gray-900 dark:text-white">Vikram Singh</h4>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm">Data Analyst</p>
+                            <div class="flex text-amber-500 text-sm mt-1">
+                                ⭐⭐⭐⭐⭐
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed italic">
+                        "The WiFi speed is incredible, which is crucial for my work. The business center is well-equipped, and I love the recreation lounge for unwinding after long work days. Great value for money!"
+                    </p>
+                </div>
+
+                <!-- Testimonial 5 -->
+                <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 animate-on-scroll">
+                    <div class="flex items-center mb-6">
+                        <img src="https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" 
+                             alt="Sneha Gupta" 
+                             class="w-16 h-16 rounded-full object-cover mr-4"
+                             loading="lazy">
+                        <div>
+                            <h4 class="font-semibold text-gray-900 dark:text-white">Sneha Gupta</h4>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm">Graphic Designer</p>
+                            <div class="flex text-amber-500 text-sm mt-1">
+                                ⭐⭐⭐⭐⭐
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed italic">
+                        "The aesthetic appeal of this place is outstanding! Every corner is Instagram-worthy. The common areas are beautifully designed, and my Deluxe Room with balcony is perfect for my creative work."
+                    </p>
+                </div>
+
+                <!-- Testimonial 6 -->
+                <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 animate-on-scroll">
+                    <div class="flex items-center mb-6">
+                        <img src="https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" 
+                             alt="Arjun Mehta" 
+                             class="w-16 h-16 rounded-full object-cover mr-4"
+                             loading="lazy">
+                        <div>
+                            <h4 class="font-semibold text-gray-900 dark:text-white">Arjun Mehta</h4>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm">Finance Professional</p>
+                            <div class="flex text-amber-500 text-sm mt-1">
+                                ⭐⭐⭐⭐⭐
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed italic">
+                        "Moving to Premium PG was the best decision I made. The concierge service is exceptional, and the location connectivity is perfect. The community of residents here is wonderful and professional."
+                    </p>
+                </div>
+            </div>
+
+            <!-- Overall Rating -->
+            <div class="text-center mt-16 animate-on-scroll">
+                <div class="inline-flex items-center bg-gradient-to-r from-amber-500 to-orange-500 text-white px-8 py-4 rounded-2xl shadow-lg">
+                    <div class="text-3xl font-bold mr-4">4.9</div>
+                    <div>
+                        <div class="flex text-xl mb-1">⭐⭐⭐⭐⭐</div>
+                        <div class="text-sm opacity-90">Based on 150+ reviews</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="py-20 bg-gray-50 dark:bg-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 animate-on-scroll">
+                <h2 class="text-4xl md:text-5xl font-serif font-bold text-gray-900 dark:text-white mb-6">
+                    Prime <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-orange-500">Location</span>
+                </h2>
+                <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                    Strategically located in the heart of the business district with excellent connectivity and nearby amenities
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-start">
+                <!-- Location Info -->
+                <div class="animate-on-scroll">
+                    <h3 class="text-2xl font-serif font-semibold text-gray-900 dark:text-white mb-6">
+                        📍 123 Premium Street, Business District
+                    </h3>
+                    
+                    <!-- Nearby Places -->
+                    <div class="space-y-6 mb-8">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center text-white text-lg">
+                                🏢
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 dark:text-white mb-1">Business Hubs</h4>
+                                <p class="text-gray-600 dark:text-gray-300 text-sm">
+                                    IT Park (2 km) • Financial District (1.5 km) • Corporate Towers (1 km)
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-gradient-to-r from-green-500 to-green-600 rounded-xl flex items-center justify-center text-white text-lg">
+                                🚇
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 dark:text-white mb-1">Public Transport</h4>
+                                <p class="text-gray-600 dark:text-gray-300 text-sm">
+                                    Metro Station (500m) • Bus Stop (200m) • Railway Station (3 km)
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-gradient-to-r from-purple-500 to-purple-600 rounded-xl flex items-center justify-center text-white text-lg">
+                                🛍️
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 dark:text-white mb-1">Shopping & Dining</h4>
+                                <p class="text-gray-600 dark:text-gray-300 text-sm">
+                                    Mall (800m) • Restaurants (300m) • Supermarket (400m)
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-gradient-to-r from-red-500 to-red-600 rounded-xl flex items-center justify-center text-white text-lg">
+                                🏥
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 dark:text-white mb-1">Healthcare & Education</h4>
+                                <p class="text-gray-600 dark:text-gray-300 text-sm">
+                                    Hospital (1 km) • University (2 km) • Pharmacy (300m)
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-gradient-to-r from-amber-500 to-orange-500 rounded-xl flex items-center justify-center text-white text-lg">
+                                🎯
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 dark:text-white mb-1">Entertainment</h4>
+                                <p class="text-gray-600 dark:text-gray-300 text-sm">
+                                    Cinema (600m) • Parks (400m) • Gym (200m) • Cafes (100m)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Get Directions Button -->
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="https://maps.google.com/?q=28.6139,77.2090" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           class="inline-flex items-center justify-center bg-gradient-to-r from-amber-500 to-orange-500 text-white px-6 py-3 rounded-2xl font-semibold hover:shadow-lg transition-all duration-200">
+                            🗺️ Get Directions
+                        </a>
+                        <a href="tel:+919876543210" 
+                           class="inline-flex items-center justify-center bg-white dark:bg-gray-700 text-gray-900 dark:text-white border-2 border-gray-300 dark:border-gray-600 px-6 py-3 rounded-2xl font-semibold hover:shadow-lg transition-all duration-200">
+                            📞 Call for Pickup
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Google Map -->
+                <div class="animate-on-scroll">
+                    <div class="bg-white dark:bg-gray-900 rounded-3xl overflow-hidden shadow-xl">
+                        <div class="h-96 relative">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.674920656613!2d77.20663731508236!3d28.613934982421896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce2daa9eb4d0b%3A0x717971125923e5d!2sIndia%20Gate!5e0!3m2!1sen!2sin!4v1635789012345!5m2!1sen!2sin"
+                                width="100%" 
+                                height="100%" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade"
+                                class="rounded-3xl">
+                            </iframe>
+                            
+                            <!-- Map Overlay with Address -->
+                            <div class="absolute bottom-4 left-4 right-4 bg-white/95 dark:bg-gray-900/95 backdrop-blur-md rounded-2xl p-4 shadow-lg">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-10 h-10 bg-gradient-to-r from-amber-500 to-orange-500 rounded-xl flex items-center justify-center text-white">
+                                        📍
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900 dark:text-white text-sm">Premium PG Accommodation</h4>
+                                        <p class="text-gray-600 dark:text-gray-300 text-xs">123 Premium Street, Business District</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Access Info -->
+                    <div class="mt-6 grid grid-cols-2 gap-4">
+                        <div class="bg-white dark:bg-gray-900 p-4 rounded-2xl shadow-lg text-center">
+                            <div class="text-2xl font-bold text-amber-500 mb-1">5 min</div>
+                            <div class="text-sm text-gray-600 dark:text-gray-300">to Metro Station</div>
+                        </div>
+                        <div class="bg-white dark:bg-gray-900 p-4 rounded-2xl shadow-lg text-center">
+                            <div class="text-2xl font-bold text-amber-500 mb-1">10 min</div>
+                            <div class="text-sm text-gray-600 dark:text-gray-300">to IT Park</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white dark:bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 animate-on-scroll">
+                <h2 class="text-4xl md:text-5xl font-serif font-bold text-gray-900 dark:text-white mb-6">
+                    Get In <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-orange-500">Touch</span>
+                </h2>
+                <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                    Ready to experience luxury living? Contact us today to book your premium accommodation
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-16">
+                <!-- Contact Information -->
+                <div class="animate-on-scroll">
+                    <h3 class="text-2xl font-serif font-semibold text-gray-900 dark:text-white mb-8">
+                        Contact Information
+                    </h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-gradient-to-r from-amber-500 to-orange-500 rounded-xl flex items-center justify-center text-white text-lg">
+                                📞
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 dark:text-white mb-1">Phone</h4>
+                                <p class="text-gray-600 dark:text-gray-300">+91-98765-43210</p>
+                                <p class="text-gray-600 dark:text-gray-300">+91-98765-43211</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-gradient-to-r from-amber-500 to-orange-500 rounded-xl flex items-center justify-center text-white text-lg">
+                                ✉️
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 dark:text-white mb-1">Email</h4>
+                                <p class="text-gray-600 dark:text-gray-300">info@premiumpg.com</p>
+                                <p class="text-gray-600 dark:text-gray-300">bookings@premiumpg.com</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-gradient-to-r from-amber-500 to-orange-500 rounded-xl flex items-center justify-center text-white text-lg">
+                                📍
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 dark:text-white mb-1">Address</h4>
+                                <p class="text-gray-600 dark:text-gray-300">
+                                    123 Premium Street<br>
+                                    Business District<br>
+                                    Metropolitan City - 123456
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-gradient-to-r from-amber-500 to-orange-500 rounded-xl flex items-center justify-center text-white text-lg">
+                                🕒
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 dark:text-white mb-1">Office Hours</h4>
+                                <p class="text-gray-600 dark:text-gray-300">
+                                    Monday - Saturday: 9:00 AM - 8:00 PM<br>
+                                    Sunday: 10:00 AM - 6:00 PM
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="mt-8">
+                        <h4 class="font-semibold text-gray-900 dark:text-white mb-4">Follow Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center text-white hover:shadow-lg transition-all duration-200">
+                                📘
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-gradient-to-r from-pink-500 to-pink-600 rounded-xl flex items-center justify-center text-white hover:shadow-lg transition-all duration-200">
+                                📷
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-gradient-to-r from-blue-400 to-blue-500 rounded-xl flex items-center justify-center text-white hover:shadow-lg transition-all duration-200">
+                                🐦
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-gradient-to-r from-green-500 to-green-600 rounded-xl flex items-center justify-center text-white hover:shadow-lg transition-all duration-200">
+                                💬
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="animate-on-scroll">
+                    <form id="contact-form" class="bg-gray-50 dark:bg-gray-800 p-8 rounded-3xl shadow-xl">
+                        <h3 class="text-2xl font-serif font-semibold text-gray-900 dark:text-white mb-6">
+                            Send us a Message
+                        </h3>
+                        
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <input type="text" 
+                                       name="firstName" 
+                                       placeholder="First Name" 
+                                       required
+                                       class="form-input">
+                            </div>
+                            <div>
+                                <input type="text" 
+                                       name="lastName" 
+                                       placeholder="Last Name" 
+                                       required
+                                       class="form-input">
+                            </div>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <input type="email" 
+                                       name="email" 
+                                       placeholder="Email Address" 
+                                       required
+                                       class="form-input">
+                            </div>
+                            <div>
+                                <input type="tel" 
+                                       name="phone" 
+                                       placeholder="Phone Number" 
+                                       required
+                                       class="form-input">
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <select name="roomType" 
+                                    required
+                                    class="form-input">
+                                <option value="">Select Room Type</option>
+                                <option value="standard">Standard Room - ₹7,500/month</option>
+                                <option value="deluxe">Deluxe Room - ₹10,500/month</option>
+                                <option value="executive">Executive Suite - ₹15,000/month</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-6">
+                            <select name="moveInDate" 
+                                    required
+                                    class="form-input">
+                                <option value="">Preferred Move-in Date</option>
+                                <option value="immediate">Immediate</option>
+                                <option value="1-week">Within 1 Week</option>
+                                <option value="2-weeks">Within 2 Weeks</option>
+                                <option value="1-month">Within 1 Month</option>
+                                <option value="flexible">Flexible</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-8">
+                            <textarea name="message" 
+                                      placeholder="Additional Requirements or Questions" 
+                                      rows="4"
+                                      class="form-input"></textarea>
+                        </div>
+
+                        <button type="submit" 
+                                class="w-full bg-gradient-to-r from-amber-500 to-orange-500 text-white py-4 rounded-2xl font-semibold hover:shadow-lg transition-all duration-200">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-12 h-12 bg-gradient-to-r from-amber-500 to-orange-500 rounded-2xl flex items-center justify-center text-white text-xl font-bold">
+                            🏨
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-serif font-bold">Premium PG</h3>
+                            <p class="text-xs text-gray-400">Luxury Living</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed mb-6">
+                        Experience the finest in accommodation with our premium facilities, exceptional service, and prime location in the heart of the city.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-amber-500 transition-colors duration-200">📘</a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-amber-500 transition-colors duration-200">📷</a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-amber-500 transition-colors duration-200">🐦</a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-amber-500 transition-colors duration-200">💬</a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-gray-300 hover:text-amber-400 transition-colors duration-200">Home</a></li>
+                        <li><a href="#about" class="text-gray-300 hover:text-amber-400 transition-colors duration-200">About Us</a></li>
+                        <li><a href="#rooms" class="text-gray-300 hover:text-amber-400 transition-colors duration-200">Room Types</a></li>
+                        <li><a href="#amenities" class="text-gray-300 hover:text-amber-400 transition-colors duration-200">Amenities</a></li>
+                        <li><a href="#gallery" class="text-gray-300 hover:text-amber-400 transition-colors duration-200">Gallery</a></li>
+                        <li><a href="#contact" class="text-gray-300 hover:text-amber-400 transition-colors duration-200">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Our Services</h4>
+                    <ul class="space-y-3">
+                        <li><span class="text-gray-300">24/7 Security</span></li>
+                        <li><span class="text-gray-300">Housekeeping</span></li>
+                        <li><span class="text-gray-300">Laundry Service</span></li>
+                        <li><span class="text-gray-300">Meal Plans</span></li>
+                        <li><span class="text-gray-300">WiFi & Utilities</span></li>
+                        <li><span class="text-gray-300">Concierge Service</span></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Contact Info</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <span class="text-amber-400">📍</span>
+                            <span class="text-gray-300 text-sm">123 Premium Street, Business District, Metropolitan City - 123456</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <span class="text-amber-400">📞</span>
+                            <span class="text-gray-300">+91-98765-43210</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <span class="text-amber-400">✉️</span>
+                            <span class="text-gray-300">info@premiumpg.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="border-t border-gray-800 pt-8 text-center">
+                <p class="text-gray-400">
+                    © 2024 Premium PG Accommodation. All rights reserved. | 
+                    <a href="#" class="hover:text-amber-400 transition-colors duration-200">Privacy Policy</a> | 
+                    <a href="#" class="hover:text-amber-400 transition-colors duration-200">Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 w-12 h-12 bg-gradient-to-r from-amber-500 to-orange-500 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 opacity-0 invisible">
+        ↑
+    </button>
+
+    <!-- Scripts -->
+    <script src="src/main.js"></script>
+</body>
+</html>
